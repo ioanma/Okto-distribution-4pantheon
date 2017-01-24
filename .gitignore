@@ -1,59 +1,32 @@
-# Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
-files/*
-
-# Pantheon commits a settings.php for environment-specific settings.
-# Place local settings in settings.local.php
-sites/*/settings.local.php
-
-# Note that services.local.yml is not loaded by default. If you would like
-# to use this file add the following to your settings.local.php file:
-#   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
-sites/*/services.local.yml
-
-# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
-/sites/default/**/files
-/sites/default/**/private
-
-# Ignore SimpleTest multi-site environment.
-sites/simpletest
-
-# Packages #
-############
-*.7z
-*.dmg
-*.gz
-*.bz2
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-*.tgz
-
-# Logs and databases #
-######################
-*.log
-*.sql
-
 # OS generated files #
 ######################
 .DS_Store*
 ehthumbs.db
-Icon
-
+Icon?
 Thumbs.db
+.svn
 ._*
+*~
 
-# Vim generated files #
-######################
-*.un~
+# Ignore IDEs project directories.
+.idea
+.project
+.settings
+*.bbprojectd
+*.sublime-project
+*.sublime-workspace
+*.tmproj
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*.swp
+*~.nib
+nbproject
+.komodotools
+.komodoproject
+.buildpath
 
-# SASS #
-##########
-.sass-cache
-
-# Things in the core directory that Drupal 8 commits in the repository.
-!core/**/*.gz
-
+# Ignore MacFuse hidden files
+.apdisk
